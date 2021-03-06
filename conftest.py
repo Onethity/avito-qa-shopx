@@ -52,9 +52,6 @@ def driver(config, request: FixtureRequest):
         elif browser == 'chromium':
             manager = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM)
             driver = webdriver.Chrome(manager.install())
-        elif browser == 'firefox':
-            manager = GeckoDriverManager()
-            driver = webdriver.Firefox(executable_path=manager.install())
         else:
             raise UnsupportedBrowserException(
                 f'Unsupported browser "{browser}". You must type one of "chrome", "chromium" or "firefox"')
