@@ -12,7 +12,7 @@
 
 Порядок запуска:
 * Склонировать репозиторий:
-`git clone http://...`
+`git clone https://github.com/Onethity/avito-qa-shopx.git`
 
 * Установить зависимости: `pip install -r requirements.txt`
 
