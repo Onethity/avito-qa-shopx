@@ -54,7 +54,7 @@ def driver(config, request: FixtureRequest):
             driver = webdriver.Chrome(manager.install())
         else:
             raise UnsupportedBrowserException(
-                f'Unsupported browser "{browser}". You must type one of "chrome", "chromium" or "firefox"')
+                f'Unsupported browser "{browser}". You must type one of "chrome" or "chromium"')
 
     driver.maximize_window()
     driver.get(config['app_full_url'])
